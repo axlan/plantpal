@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:stretchColumns="1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+    <TextView  android:text="Edit Plant" android:textSize="20sp" android:textStyle="bold" android:layout_width="fill_parent" android:id="@+id/textView1" android:layout_height="wrap_content" android:gravity="center" android:background="@color/white"></TextView>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="Plant Name" android:id="@+id/textView2"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/nameText"></EditText>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Days Between Waterings" android:id="@+id/textView3" android:layout_gravity="center"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="number" android:id="@+id/periodText"></EditText>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:text="Days Until Next Watering" android:id="@+id/textView4"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="numberSigned" android:id="@+id/startText"></EditText>
+    <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_gravity="left" android:id="@+id/buttonLayout">
+        <Button android:text="Save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:id="@+id/savebutton"></Button>
+        <Button android:text="Delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:id="@+id/deletebutton"></Button>
+    </RelativeLayout>
+</LinearLayout>

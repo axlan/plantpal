@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.robopenguins"
+      android:versionCode="3"
+      android:versionName="1.1">
+    <uses-sdk android:minSdkVersion="3" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name="EditAct">
+		</activity>
+		<activity android:name="EditReminder">
+		</activity>
+		<receiver  android:process=":remote" android:name="AlarmReceiver"></receiver>
+		<receiver android:name="MyStartupIntentReceiver">
+			<intent-filter>
+			<action
+			android:name="android.intent.action.BOOT_COMPLETED" />
+			<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+</manifest>
